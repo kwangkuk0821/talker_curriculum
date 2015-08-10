@@ -1,0 +1,32 @@
+<div class="screen chat">
+  <div class="header">
+    <div class="title">
+      <%= image_tag 'pelican.svg', class: 'image' %>
+      <div class="name">토이코드 봇</div>
+    </div>
+    <div class="buttons">
+      <%= link_to image_tag('learn.svg', class: 'button'), '/dictionary/new' %>
+      <%= link_to image_tag('dictionary.svg', class: 'button'), '/dictionary' %>
+    </div>
+  </div>
+  <div class="talk-wrapper">
+    <div class="talk user">
+      <div class="message">
+        <div class="content">안녕!</div>
+      </div>
+    </div>
+    <div class="talk">
+      <%= image_tag 'pelican.svg', class: 'image' %>
+      <div class="message">
+        <div class="name">토이코드 봇</div>
+        <div class="content">네, 안녕하세요!</div>
+      </div>
+    </div>
+  </div>
+  <form class="message-form">
+    <input type="submit" value="전송" class="submit-button">
+    <div class="content-input-wrapper">
+      <input type="text" name="content" class="content-input" autofocus>
+    </div>
+  </form>
+</div>
