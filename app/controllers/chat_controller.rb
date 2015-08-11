@@ -3,6 +3,8 @@ class ChatController < ApplicationController
   end
 
   def create
+    content = params[:content]
+
     redirect_to '/'
   end
 end
