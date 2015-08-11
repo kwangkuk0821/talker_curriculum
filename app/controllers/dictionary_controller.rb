@@ -1,5 +1,6 @@
 class DictionaryController < ApplicationController
   def index
+    @dictionaries = Dictionary.all
   end
 
   def new
