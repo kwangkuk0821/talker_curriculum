@@ -14,7 +14,7 @@
       <% if chat.who == "user" %>
         <div class="talk user">
           <div class="message">
-            <div class="content">안녕!</div>
+            <div class="content"><%= chat.content %></div>
           </div>
         </div>
       <% else %>
@@ -22,7 +22,7 @@
           <%= image_tag 'pelican.svg', class: 'image' %>
           <div class="message">
             <div class="name">토이코드 봇</div>
-            <div class="content">네, 안녕하세요!</div>
+            <div class="content"><%= chat.content %></div>
           </div>
         </div>
       <% end %>
