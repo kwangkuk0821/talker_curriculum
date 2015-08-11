@@ -19,7 +19,7 @@
           <div class="time"><%= dictionary.time_format %></div>
           <div class="buttons">
             <%= link_to '수정', edit_dictionary_path(dictionary.id), class: 'button' %>
-            <a href="#" class="button">삭제</a>
+            <%= link_to '삭제', dictionary, data: {confirm: '정말 삭제하시겠습니까?'}, method: 'delete', class: 'button' %>
           </div>
         </div>
       </div>
