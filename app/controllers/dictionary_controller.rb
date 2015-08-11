@@ -6,5 +6,6 @@ class DictionaryController < ApplicationController
   end
 
   def create
+    redirect_to '/dictionary'
   end
 end
