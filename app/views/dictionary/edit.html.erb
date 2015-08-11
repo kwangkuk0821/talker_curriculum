@@ -16,12 +16,12 @@
     <%= form_tag @dictionary, method: 'put', class: 'learn-form' do %>
       <div class="message user">
         <div class="content">
-          <input type="text" name="ask" value="" placeholder="이렇게 물어보면" class="ask-input">
+          <input type="text" name="ask" value="<%= @dictionary.ask %>" placeholder="이렇게 물어보면" class="ask-input">
         </div>
       </div>
       <div class="message">
         <div class="content">
-          <textarea name="answer" placeholder="이렇게 대답해" class="answer-textarea"></textarea>
+          <textarea name="answer" placeholder="이렇게 대답해" class="answer-textarea"><%= @dictionary.answer%></textarea>
         </div>
       </div>
       <div class="buttons">
