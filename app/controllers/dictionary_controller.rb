@@ -30,5 +30,8 @@ class DictionaryController < ApplicationController
   end
 
   def destroy
+    Dictionary.destroy(params[:id])
+
+    redirect_to '/dictionary'
   end
 end
