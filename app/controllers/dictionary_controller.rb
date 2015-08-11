@@ -14,4 +14,7 @@ class DictionaryController < ApplicationController
 
     redirect_to '/dictionary'
   end
+
+  def edit
+  end
 end
