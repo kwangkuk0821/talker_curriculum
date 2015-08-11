@@ -16,5 +16,6 @@ class DictionaryController < ApplicationController
   end
 
   def edit
+    @dictionary = Dictionary.find(params[:id])
   end
 end
