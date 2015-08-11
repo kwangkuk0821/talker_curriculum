@@ -28,4 +28,7 @@ class DictionaryController < ApplicationController
 
     redirect_to '/dictionary'
   end
+
+  def destroy
+  end
 end
