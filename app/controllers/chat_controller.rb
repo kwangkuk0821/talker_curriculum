@@ -6,6 +6,13 @@ class ChatController < ApplicationController
     content = params[:content]
     dictionary = Dictionary.where(ask: content).sample
 
-    redirect_to '/'
+    if dictionary.nil?
+      redirect_to '/dictionary/new'
+    else
+      Chat.create(who: 'user', content: dictionary.ask)
+      Chat.create(who: 'bot', content: dictionary.answer)
+      redirect_to '/'
+    end
+
   end
 end
