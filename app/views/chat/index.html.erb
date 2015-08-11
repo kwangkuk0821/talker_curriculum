@@ -23,10 +23,10 @@
       </div>
     </div>
   </div>
-  <form class="message-form">
+  <%= form_tag '/chat', method: 'post', class: 'message-form' do %>
     <input type="submit" value="전송" class="submit-button">
     <div class="content-input-wrapper">
       <input type="text" name="content" class="content-input" autofocus>
     </div>
-  </form>
+  <% end %>
 </div>
