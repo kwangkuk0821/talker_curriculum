@@ -9,6 +9,8 @@ class DictionaryController < ApplicationController
     ask = params[:ask]
     answer = params[:answer]
 
+    Dictionary.create(ask: ask, answer: answer)
+
     redirect_to '/dictionary'
   end
 end
