@@ -20,5 +20,12 @@ class DictionaryController < ApplicationController
   end
 
   def update
+    dictionary = Dictionary.find(params[:id])
+    ask = params[:ask]
+    answer = params[:answer]
+
+    dictionary.update(ask: ask, answer: answer)
+
+    redirect_to '/dictionary'
   end
 end
