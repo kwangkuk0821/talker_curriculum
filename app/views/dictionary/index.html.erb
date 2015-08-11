@@ -18,7 +18,7 @@
         <div class="footer">
           <div class="time"><%= dictionary.time_format %></div>
           <div class="buttons">
-            <a href="#" class="button">수정</a>
+            <%= link_to '수정', edit_dictionary_path(dictionary.id), class: 'button' %>
             <a href="#" class="button">삭제</a>
           </div>
         </div>
