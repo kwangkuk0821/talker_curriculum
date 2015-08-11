@@ -6,6 +6,9 @@ class DictionaryController < ApplicationController
   end
 
   def create
+    ask = params[:ask]
+    answer = params[:answer]
+
     redirect_to '/dictionary'
   end
 end
