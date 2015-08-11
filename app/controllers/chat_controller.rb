@@ -4,6 +4,7 @@ class ChatController < ApplicationController
 
   def create
     content = params[:content]
+    dictionary = Dictionary.where(ask: content).sample
 
     redirect_to '/'
   end
